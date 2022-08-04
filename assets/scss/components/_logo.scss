@@ -1,0 +1,9 @@
+.logo{
+    height: 2.125rem;
+    
+    &-footer {
+        @include media-breakpoint-up(md) {
+            height: 3.125rem;
+        }
+    }
+}

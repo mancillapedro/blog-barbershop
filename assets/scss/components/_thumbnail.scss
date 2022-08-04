@@ -1,0 +1,10 @@
+.thumbnail{
+    height: $thumbnail-small;
+    width: $thumbnail-small;
+    border-radius: 50%;
+    @include media-breakpoint-up(md) {
+        height: $thumbnail-normal;
+        width: $thumbnail-normal;
+    }
+
+}

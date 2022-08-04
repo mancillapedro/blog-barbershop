@@ -1,0 +1,69 @@
+%font-ligther{
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    font-family: $font-playfair;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2.5rem;
+    
+    @include media-breakpoint-up(md) {
+        font-size: $xx-large;
+    }
+}
+
+h3 {
+    @extend %font-ligther;
+
+    @include media-breakpoint-up(md) {
+        font-size: $large;
+    }
+}
+
+time {
+    color: $nickel;
+    font-family: $font-playfair;
+
+    @include media-breakpoint-up(md) {
+        font-size: $large;
+    }
+}
+
+p,
+button {
+    font-family: $font-roboto;
+    line-height: 2.5rem;
+    letter-spacing: .5pt;
+    @extend %font-ligther;
+
+    @include media-breakpoint-up(md) {
+        line-height: 2.75rem;
+    }
+}
+
+button {
+
+    @include media-breakpoint-up(md) {
+        font-size: $medium !important;
+    }
+
+}
+
+.author__description {
+    font-size: .9rem;
+    line-height: 2.25rem;
+    color: $nickel;
+}
+
+.pagination {
+    font-size: $small;
+
+    @include media-breakpoint-up(md) {
+        font-size: $medium;
+    }
+}
